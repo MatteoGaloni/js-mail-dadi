@@ -23,6 +23,11 @@ for (let c = 0; c < emailUsers.length; c++) {
    
 }
 
+if (ricerca == false) {
+    alert("Credenziali errate!!!")
+} else (ricerca == true)
+    alert("Credenziali corrette")
+
 
 
 
