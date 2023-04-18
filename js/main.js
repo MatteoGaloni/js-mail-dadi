@@ -1,16 +1,15 @@
 // ****aggiungo emailUsers array e creo prompt****
-const emailUsers = ["flavia@gmail.com", "marco@gmail.com"]
-
+let emailUsers = ["flavia@gmail.com", "marco@gmail.com", "gino@gmail.com"]
 let person = prompt("Per favore inserisci la tua email")
+
 
 // ***apro ciclo for per richiamare i valori dell'array***
 for (let c = 0; c < emailUsers.length; c++) {
-    console.log(emailUsers[c]);
-    
-// ***condizione: se la mail inserita è quella di flavia allora hai vinto***  
-    if (c = "flavia@gmail.com") {
-        console.log("Hai vinto");
+// ***creo variabile che conterrà gli users dell'array***
+    const user = emailUsers[c];
+// ***creo condizione per stampare hai vinto****
+    if (user == person) {
+        console.log("hai vinto")
     }
-
-    
+   
 }
