@@ -1,8 +1,8 @@
-// ****aggiungo emailUsers array e creo prompt****
+// ****aggiungo emailUsers/prompt/variabile vuota****
 let emailUsers = ["flavia@gmail.com", "marco@gmail.com", "gino@gmail.com"]
 let person = prompt("Per favore inserisci la tua email")
-let ricerca = false 
-
+let logIn = false 
+// let input = document.getElementById("input").value
 
 // ***apro ciclo for per richiamare i valori dell'array***
 for (let c = 0; c < emailUsers.length; c++) {
@@ -10,15 +10,17 @@ for (let c = 0; c < emailUsers.length; c++) {
     
     const user = emailUsers[c];
     
-// ***creo condizione per determinare se true o false****
+// ***creo condizione dentro FOR per determinare se true****
     if (user == person) {
-        ricerca = true
+        logIn = true
         console.log(ricerca)
         // console.log("Credenziali valide")
         // alert("Credenziali valide");
     }
 }
-if (ricerca == false) {
+
+// ***creo condizione con Alert fuori FOR per avere il risultato alla fine del ciclo****
+if (logIn == false) {
     alert("Credenziali errate!!!")
 }
 else {
