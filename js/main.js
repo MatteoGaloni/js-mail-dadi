@@ -13,7 +13,7 @@ for (let c = 0; c < emailUsers.length; c++) {
 // ***creo condizione dentro FOR per determinare se true****
     if (user == person) {
         logIn = true
-        console.log(ricerca)
+        console.log(logIn)
         // console.log("Credenziali valide")
         // alert("Credenziali valide");
     }
@@ -26,6 +26,4 @@ if (logIn == false) {
 else {
     alert("Credenziali corrette")
 }
-
-
 
